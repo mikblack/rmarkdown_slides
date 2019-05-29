@@ -3,8 +3,13 @@ title: "Slides in R Markdown"
 subtitle: "Taught from slides that I made in R markdown..."
 author: "Mik Black"
 date: "30 May 2019"
-output: ioslides_presentation
+output: 
+  ioslides_presentation: default
+  github_document: default
 ---
+
+<!-- Run line below in R to render multiple documents: -->
+<!-- rmarkdown::render("rmarkdown_slides.Rmd", output_format=c("ioslides_presentation","github_document")) -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
