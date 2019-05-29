@@ -3426,6 +3426,25 @@ plot(pressure)
 <li>You could use this if you need to squeeze some more words in…</li>
 </ul>
 
+</article></slide><slide class=""><hgroup><h2>Incremental bullets</h2></hgroup><article  id="incremental-bullets">
+
+<ul>
+<li>You can render bullets incrementally by adding the incremental option:</li>
+</ul>
+
+<pre >  ---
+  output:
+    ioslides_presentation:
+      incremental: true
+  ---</pre>
+
+<ul>
+<li>If you want to render bullets incrementally for some slides but not others you can (ab)use this syntax for blockquotes:</li>
+</ul>
+
+<pre >  &gt; - Eat eggs
+  &gt; - Drink coffee </pre>
+
 </article></slide><slide class=""><hgroup><h2>Two column layout</h2></hgroup><article  id="two-column-layout">
 
 <pre >&lt;div class=&quot;columns-2&quot;&gt;
@@ -3460,7 +3479,72 @@ This text is red
 &lt;/div&gt;</pre>
 
 <div class="red2">
-<p>This text is red</p></div></article></slide>
+<p>This text is red</p></div>
+
+</article></slide><slide class=""><hgroup><h2>Pretty tables</h2></hgroup><article  id="pretty-tables">
+
+<pre class = 'prettyprint lang-r'>library(dplyr)
+summary(cars) %&gt;% knitr::kable()</pre>
+
+<table class = 'rmdtable'>
+<tr class="header">
+<th align="left"></th>
+<th align="center">speed</th>
+<th align="center">dist</th>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="center">Min. : 4.0</td>
+<td align="center">Min. : 2.00</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center">1st Qu.:12.0</td>
+<td align="center">1st Qu.: 26.00</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="center">Median :15.0</td>
+<td align="center">Median : 36.00</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center">Mean :15.4</td>
+<td align="center">Mean : 42.98</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="center">3rd Qu.:19.0</td>
+<td align="center">3rd Qu.: 56.00</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="center">Max. :25.0</td>
+<td align="center">Max. :120.00</td>
+</tr>
+</table>
+
+</article></slide><slide class=""><hgroup><h2>In summary</h2></hgroup><article  id="in-summary">
+
+<ul>
+<li>Making cool looking presentations using R Markdown is super easy.</li>
+<li>There are MANY ways to tweak your slides
+
+<ul>
+<li>see links at the start of this document</li>
+<li>lots of other online resources</li>
+</ul></li>
+<li>Advantages:
+
+<ul>
+<li>analyses are built-in and reproducible</li>
+<li>outputs are automatically integrated into the document</li>
+<li>fits seemlesly into an R-centric workflow</li>
+<li>text-based document makes version control with Git easy</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Let’s try it!</h2></hgroup><article  id="lets-try-it"></article></slide>
 
 
   <slide class="backdrop"></slide>

@@ -307,6 +307,25 @@ $\pi(\theta|X) = \frac{f(X|\theta)\pi(\theta)}{\int{f(X|\theta)\pi(\theta)d\thet
  - The text on this slide is smaller
  - You could use this if you need to squeeze some more words in...
  
+## Incremental bullets
+
+- You can render bullets incrementally by adding the incremental option:
+
+```
+  ---
+  output:
+    ioslides_presentation:
+      incremental: true
+  ---
+```
+
+- If you want to render bullets incrementally for some slides but not others you can (ab)use this syntax for blockquotes:
+
+```
+  > - Eat eggs
+  > - Drink coffee 
+```
+
 ## Two column layout
 
 ````
@@ -348,3 +367,28 @@ This text is red
 This text is red
 </div>
 
+## Pretty tables
+
+```{r, echo=TRUE, eval=FALSE}
+library(dplyr)
+summary(cars) %>% knitr::kable()
+```
+
+```{r}
+suppressMessages(library(dplyr))
+summary(cars) %>% knitr::kable()
+```
+
+## In summary
+
+- Making cool looking presentations using R Markdown is super easy.
+- There are MANY ways to tweak your slides
+    - see links at the start of this document
+    - lots of other online resources
+- Advantages:
+    - analyses are built-in and reproducible
+    - outputs are automatically integrated into the document
+    - fits seemlesly into an R-centric workflow
+    - text-based document makes version control with Git easy
+
+# Let's try it!
