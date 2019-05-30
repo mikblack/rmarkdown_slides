@@ -289,8 +289,8 @@ knitr::include_graphics("https://carpentries.org/images/TheCarpentries-opengraph
 
 - Code
 ```
-    $\pi(\theta|X) = \frac{f(X|\tha)\pi(\theta)}
-                     {\int{f(X|\tha)\pi(\theta)d\theta}}$
+    $\pi(\theta|X) = \frac{f(X|\theta)\pi(\theta)}
+                     {\int{f(X|\theta)\pi(\theta)d\theta}}$
 ```
 
 - Output:
