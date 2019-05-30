@@ -184,7 +184,7 @@ plot(pressure)
   ```
 ````
 
-- Or you can define it globally at the top of the file:
+- Or you can define it globally at the top of the file (after the YAML header):
 
 ````
   ```{r setup, include=FALSE}`r ''`
@@ -253,11 +253,27 @@ plot(pressure)
 knitr::include_graphics("figures/otago_logo.jpg")
 ```
 
+## Using an image URL
+
+- You can also load an image directly from the web (make sure you have internet connectivity when you knit your document):
+
+````
+  ```{r, out.width = "400px", fig.align="center"}`r ''`
+  fig <- 'https://carpentries.org/images/TheCarpentries-opengraph.png'
+  knitr::include_graphics(fig)
+  ```
+````
+
+```{r, out.width = "400px", fig.align='center'}
+knitr::include_graphics("https://carpentries.org/images/TheCarpentries-opengraph.png")
+```
+
+
 # Random tricks!
 
 ## Like - what's with that grey slide?
 
-- If you use a single hashtag for the slide title, you get a grey-background "transition slide"
+- If you use a single hash for the slide title, you get a grey-background "transition slide"
 
 ```
   # Random tricks!
@@ -388,7 +404,7 @@ summary(cars) %>% knitr::kable()
 - Advantages:
     - analyses are built-in and reproducible
     - outputs are automatically integrated into the document
-    - fits seemlesly into an R-centric workflow
+    - fits seamlessly into an R-centric workflow
     - text-based document makes version control with Git easy
 
 # Let's try it!
